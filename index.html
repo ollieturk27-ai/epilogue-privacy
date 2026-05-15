@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — epilogue</title>
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2f6f5e;
+      --bg: #fafaf7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 22px 80px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 6px;
+      letter-spacing: -0.4px;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 36px 0 10px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    p, li { font-size: 16px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    code {
+      background: #f1f0eb;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    strong { color: var(--text); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 18px 0 4px;
+    }
+    .footer {
+      margin-top: 48px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy — epilogue</h1>
+    <div class="updated"><strong>Last updated:</strong> 2026-05-15</div>
+
+    <p>
+      epilogue ("the app", "we", "our") is a personal book-tracking app published by
+      <strong>oturk1</strong>. This policy explains what data the app handles, where it lives,
+      and what we do (and don't do) with it. It applies to the Android version of the app
+      distributed via Google Play.
+    </p>
+
+    <h2>TL;DR</h2>
+    <div class="card">
+      <ul>
+        <li>We don't run any servers. We don't collect, store, or transmit your data to ourselves or to anyone else.</li>
+        <li>Your library, TBR, reading log, notes, reviews, and quotes live on your device.</li>
+        <li>If you choose to enable sync, your data is uploaded to your <strong>own</strong> Google Drive in a private application folder we cannot read from our end.</li>
+        <li>The only network calls the app makes are to public cover/genre lookup services (Google Books, Open Library) so it can fill in book details — and only for the books you choose to look up.</li>
+      </ul>
+    </div>
+
+    <h2>What data the app handles</h2>
+    <p>The app stores the following on your device, locally:</p>
+    <ul>
+      <li>Books in your library (title, author, dates, ratings, reviews, notes, tags, cover URLs, page count, audiobook duration, playback speed, re-read count, source, quotes).</li>
+      <li>Books on your TBR (to-be-read) list.</li>
+      <li>Your daily reading log (which books you read, pages or minutes per session, notes).</li>
+      <li>App preferences (theme, view mode, rating style, sort order, format filter, monthly/yearly reading goals, tutorial seen-flags, your name).</li>
+    </ul>
+    <p>This data does not leave your device unless you explicitly:</p>
+    <ol>
+      <li><strong>Enable Google Drive sync</strong> (see below), or</li>
+      <li><strong>Export a backup file</strong> (CSV or JSON) and share / save it via your device's share sheet.</li>
+    </ol>
+
+    <h2>Google Drive sync (optional)</h2>
+    <p>
+      If you sign in to Google Drive from the app's Sync settings, the app uploads a single
+      JSON snapshot of your data to a <strong>hidden application folder</strong> inside <em>your</em>
+      Google Drive (<code>appDataFolder</code> scope). This folder is private to the epilogue app
+      — it isn't visible in your normal Drive UI and other apps cannot read it.
+    </p>
+    <ul>
+      <li>We do not have access to your Drive or your data.</li>
+      <li>We do not store your OAuth tokens on our servers — they live in your device's secure keystore.</li>
+      <li>You can disconnect at any time via Settings → Sync → Disconnect Drive. To delete the remote snapshot entirely, use the "Reset everything" option, or revoke the app from your Google account at <a href="https://drive.google.com/drive/settings">drive.google.com → Settings → Manage apps</a>.</li>
+    </ul>
+    <p>The OAuth flow uses Google's standard authorization endpoints. We request only the <code>drive.appdata</code> scope.</p>
+
+    <h2>What data we do <em>not</em> collect</h2>
+    <ul>
+      <li>Email addresses, phone numbers, real names beyond what you type for display.</li>
+      <li>Crash reports, analytics events, page-view tracking, advertising identifiers, location data.</li>
+      <li>Anything from your camera, microphone, contacts, or photo gallery beyond what you explicitly pick (book cover photos, ISBN barcode scans). Permission prompts only fire when you tap the relevant feature.</li>
+    </ul>
+
+    <h2>Network requests</h2>
+    <p>The app contacts these third-party services on your behalf, and only when you trigger an action that needs them:</p>
+    <ul>
+      <li><strong>Google Books API</strong> and <strong>Open Library</strong> — to look up cover art, page counts, and genre metadata for books you add. Sends only the book's title, author, or ISBN.</li>
+      <li><strong>Google Drive API</strong> — only when sync is enabled.</li>
+    </ul>
+    <p>We do not embed any analytics, ad networks, or tracking SDKs.</p>
+
+    <h2>Children's privacy</h2>
+    <p>The app is not directed at children under 13 and does not knowingly collect any data from them. Since the app collects no data at all, this is true by construction.</p>
+
+    <h2>Your rights</h2>
+    <p>Because all your data lives on your device (and optionally in your own Google Drive), you control it:</p>
+    <ul>
+      <li><strong>Export:</strong> Settings → Backup &amp; Restore → "Back up to a file"</li>
+      <li><strong>Delete locally:</strong> Settings → Danger Zone → "Delete ALL books" / "Clear Journal &amp; streaks" / "Reset everything"</li>
+      <li><strong>Delete remote Drive copy:</strong> Settings → Danger Zone → "Reset everything" (or revoke via Google account settings)</li>
+    </ul>
+    <p>Uninstalling the app removes all local data. The remote Drive snapshot (if any) is <strong>not</strong> automatically removed by uninstall — use "Reset everything" first if you want the remote copy gone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the app ever starts collecting data — it currently doesn't and there are no plans to — this policy will be updated and the app will request explicit consent before any change in data handling takes effect.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or how the app handles data: open an issue at the app's repository, or contact the developer through the Play Store listing.</p>
+
+    <div class="footer">epilogue · privacy policy</div>
+  </div>
+</body>
+</html>
